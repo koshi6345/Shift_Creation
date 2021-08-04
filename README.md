@@ -25,6 +25,3 @@ https://docs.google.com/spreadsheets/d/11CdOcRW-T8n_XB7mAQP-q0_VY7F1kRDsNXZp4meU
 
 ## 開発環境
 ruby 5.2.5
-
-## 使用素材
-無し
