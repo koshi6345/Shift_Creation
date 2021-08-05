@@ -1,0 +1,5 @@
+<div>ユーザー編集ページ</div>
+<%= form_with model: @staff, url: staff_path(@staff), local:true do |f| %>
+  名前 <%= @staff.name %>
+  <%= f.submit '変更を保存' %>
+<% end %>
