@@ -1,0 +1,25 @@
+<div>スタッフ一覧ページ</div>
+<table>
+  <thead>
+    <tr>
+      <th>名前</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @staffs.each do |staff| %>
+      <tr>
+        <td>
+          <%= staff.name %>
+        </td>
+        <td>
+          <%= link_to "編集", edit_staff_path(staff) %>
+        </td>
+        <td>
+          <%= link_to "削除", staff_path(staff), method: :delete %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

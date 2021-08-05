@@ -12,7 +12,7 @@ Rails.application.routes.draw do
   end
 
   scope module: :admin do
-    resources :staffs,         only:   [:index, :edit, :destroy]
+    resources :staffs,         except: [:show, :new, :create]
     resources :daily_shifts,   except: [:show]
     resources :monthly_shifts, except: [:show]
     resources :works,          only:   [:index, :create]

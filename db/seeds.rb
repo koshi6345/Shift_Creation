@@ -17,27 +17,27 @@ Staff.create!(
     {
       name: '伊右衛門',
       email: 'one@one.com',
-      password: '12345678'
+      password: '123456'
     },
     {
       name: 'お～いお茶',
       email: 'two@two.com',
-      password: '23456789'
+      password: '234567'
     },
     {
       name: '綾鷹',
       email: 'three@three.com',
-      password: '34567890'
+      password: '345678'
     },
     {
       name: '生茶',
       email: 'four@four.com',
-      password: '45678901'
+      password: '456789'
     },
     {
       name: 'アールグレイ',
       email: 'five@five.com',
-      password: '56789012'
+      password: '567890'
     }
     ]
   )
