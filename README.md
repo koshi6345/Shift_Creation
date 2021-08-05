@@ -24,4 +24,4 @@
 https://docs.google.com/spreadsheets/d/11CdOcRW-T8n_XB7mAQP-q0_VY7F1kRDsNXZp4meU6a4/edit#gid=0
 
 ## 開発環境
-ruby 5.2.5
+ruby
