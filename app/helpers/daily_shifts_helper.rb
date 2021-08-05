@@ -1,0 +1,2 @@
+module DailyShiftsHelper
+end
