@@ -11,7 +11,7 @@
 
   <body>
     <header>
-      <% if user_signed_in? %>
+    <% if staff_signed_in? %>
       <li>
         <%= link_to "ログアウト", destroy_staff_session_path, method: :delete %>
       </li>
