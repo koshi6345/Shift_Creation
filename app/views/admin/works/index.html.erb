@@ -1,0 +1,31 @@
+<div>業務一覧ページ</div>
+
+<%= form_with model: @work, url: works_path, local:true do |f| %>
+  業務名 <%= f.text_field :name %>
+  <%= f.submit "新規登録" %>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>業務名</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @works.each do |work| %>
+      <tr>
+        <td>
+          <%= work.name %>
+        </td>
+        <td>
+          <%= link_to "編集", edit_work_path(work) %>
+        </td>
+        <td>
+          <%= link_to "削除", work_path(work), method: :delete %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -15,7 +15,7 @@ Rails.application.routes.draw do
     resources :staffs,         except: [:show, :new, :create]
     resources :daily_shifts,   except: [:show]
     resources :monthly_shifts, except: [:show]
-    resources :works,          only:   [:index, :create]
+    resources :works,          except: [:new, :show]
   end
 
 end
