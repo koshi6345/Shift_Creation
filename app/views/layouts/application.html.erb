@@ -13,6 +13,19 @@
     <header>
     <% if staff_signed_in? %>
       <li>
+        <%= link_to "マイページ", public_staff_path(current_staff.id) %>
+      </li>
+      <li>
+        <%= link_to "ログアウト", destroy_staff_session_path, method: :delete %>
+      </li>
+    <% elsif admin_signed_in? %>
+      <li>
+        <%= link_to "スタッフ一覧", staffs_path %>
+      </li>
+      <li>
+        <%= link_to "業務一覧", works_path %>
+      </li>
+      <li>
         <%= link_to "ログアウト", destroy_staff_session_path, method: :delete %>
       </li>
     <% else %>
@@ -21,6 +34,9 @@
       </li>
       <li>
         <%= link_to "ログイン", new_staff_session_path %>
+      </li>
+      <li>
+        <%= link_to "社員用ログイン", new_admin_session_path %>
       </li>
     <% end %>
     </header>
